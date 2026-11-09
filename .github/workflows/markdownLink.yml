@@ -40,7 +40,7 @@ jobs:
       # Ref: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable
       run: grep -v '^#' tools/super-linter/config/super-linter.env >> "$GITHUB_ENV"
     - name: Lint Markdown
-      uses: super-linter/super-linter@b4515bd4ad9d0aa4681960e053916ab991bdbe96 # v6.8.0
+      uses: super-linter/super-linter@2da136927bd4a73596db63044b504547c62cb854 # v9.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Super-Linter correction instructions
